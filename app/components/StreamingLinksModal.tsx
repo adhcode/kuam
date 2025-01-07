@@ -160,6 +160,17 @@ export default function StreamingLinksModal({
         }
     }, [shareMenuOpen])
 
+    const platformLinks = {
+        spotify: "https://open.spotify.com/album/5tj5yVUSdsSiVhCRWMClXu",
+        appleMusic: "https://music.apple.com/us/album/otilo-gbadun-single/1788782856?at=1001lry3&ct=dashboard&uo=4",
+        audiomack: "https://audiomack.com/justkuam/album/otilo-gbadun-1",
+        youtube: "#",
+        boomplay: "#",
+        deezer: "#",
+        tidal: "#",
+        amazonMusic: "#"
+    }
+
     const availablePlatforms = ['spotify', 'appleMusic', 'audiomack']
 
     return (
@@ -198,7 +209,7 @@ export default function StreamingLinksModal({
                                 className="relative mb-6 group"
                             >
                                 <Image
-                                    src={coverArt}
+                                    src="/album-cover.png"
                                     width={240}
                                     height={240}
                                     alt="Album Cover"
@@ -207,8 +218,8 @@ export default function StreamingLinksModal({
                                 />
                             </motion.div>
                             <motion.h2
-                                className="text-4xl md:text-5xl font-bold mb-2 bg-clip-text text-transparent 
-                                bg-gradient-to-r from-[#FF5757] to-white break-words"
+                                className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent 
+                                bg-gradient-to-r from-[#FF5757] to-white break-words pb-1"
                             >
                                 {isAlbum ? "otilo & gbadun" : songTitle}
                             </motion.h2>
