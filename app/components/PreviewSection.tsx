@@ -338,6 +338,8 @@ export default function PreviewSection() {
                             onClose={() => setIsModalOpen(false)}
                             songTitle={selectedSingle.title}
                             streamingLinks={selectedSingle.streamingLinks}
+                            isAlbum={selectedSingle.title === "otilo" || selectedSingle.title === "gbadun"}
+                            coverArt="/album-cover.png"
                         />
                     )}
                 </AnimatePresence>

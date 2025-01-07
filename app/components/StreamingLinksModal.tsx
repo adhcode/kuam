@@ -160,17 +160,6 @@ export default function StreamingLinksModal({
         }
     }, [shareMenuOpen])
 
-    const platformLinks = {
-        spotify: "https://open.spotify.com/album/5tj5yVUSdsSiVhCRWMClXu",
-        appleMusic: "https://music.apple.com/us/album/otilo-gbadun-single/1788782856?at=1001lry3&ct=dashboard&uo=4",
-        audiomack: "https://audiomack.com/justkuam/album/otilo-gbadun-1",
-        youtube: "#",
-        boomplay: "#",
-        deezer: "#",
-        tidal: "#",
-        amazonMusic: "#"
-    }
-
     const availablePlatforms = ['spotify', 'appleMusic', 'audiomack']
 
     return (
@@ -209,10 +198,11 @@ export default function StreamingLinksModal({
                                 className="relative mb-6 group"
                             >
                                 <Image
-                                    src="/album-cover.png"
+                                    src={coverArt}
                                     width={240}
                                     height={240}
                                     alt="Album Cover"
+                                    priority
                                     className="rounded-lg mx-auto shadow-2xl group-hover:shadow-[#FF5757]/20 
                                     transition-all duration-300 transform group-hover:scale-[1.02]"
                                 />

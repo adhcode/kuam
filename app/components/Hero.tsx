@@ -85,7 +85,7 @@ export default function Hero() {
                 onClose={() => setIsModalOpen(false)}
                 songTitle="otilo & gbadun"
                 artistName="kuam"
-                coverArt="/album-cover.jpg"
+                coverArt="/album-cover.png"
                 isAlbum={true}
                 streamingLinks={albumLinks}
             />
